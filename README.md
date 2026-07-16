@@ -43,6 +43,25 @@ Most of these bugs behave **differently across PHP versions**. A sharp audience 
 
 ## 2 — Server Side Languages Popularity
 
+echo “7” == 7;
+echo “7” === 7;
+
+PHP 7:
+echo “secure-pass1290” == 0;
+echo “7_string” == 7;
+
+PHP 8:
+echo “secure-pass1290” == 0;
+echo “7_string” == 7;
+
+echo  (int)”7_string”;
+
+
+
+echo "0e2312312" == "0";
+
+
+
 - **Say:** PHP is still the most common server-side language — roughly **~75%** of sites whose backend language is known. The chart is from W3Techs.
 - **Example:** **WordPress alone powers ~40%+ of *all* websites**, and it's PHP. That's the reason for the dominance.
 - **Emphasize:** Even if nobody starts a *new* project in PHP today, you'll meet it constantly — and much of it is **old, unpatched** (PHP 5.x / 7.x), which is exactly where these bugs live. Legacy code rarely gets a full rewrite ("not worth it").
