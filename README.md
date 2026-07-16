@@ -43,22 +43,22 @@ Most of these bugs behave **differently across PHP versions**. A sharp audience 
 
 ## 2 — Server Side Languages Popularity
 
-echo “7” == 7;
-echo “7” === 7;
+- echo “7” == 7;
+- echo “7” === 7;
 
-PHP 7:
-echo “secure-pass1290” == 0;
-echo “7_string” == 7;
+- PHP 7:
+- echo “secure-pass1290” == 0;
+- echo “7_string” == 7;
 
-PHP 8:
-echo “secure-pass1290” == 0;
-echo “7_string” == 7;
+- PHP 8:
+- echo “secure-pass1290” == 0;
+- echo “7_string” == 7;
 
-echo  (int)”7_string”;
+- echo  (int)”7_string”;
 
 
 
-echo "0e2312312" == "0";
+- echo "0e2312312" == "0";
 
 
 
