@@ -92,7 +92,7 @@ Echipa primește plicul de start și i se notează ora de plecare. Tot aici se d
 
 #### Proba — „Profesorul de pe stradă”
 
-Echipa trage **un bilețel cu o noțiune** din teancul organizatorului: cifrul lui Cezar, codul Morse, baza 2 și așa mai departe. Pe bilețel scrie regula, în trei rânduri, cu un exemplu rezolvat.
+Echipa trage **un bilețel cu o noțiune** din teancul organizatorului — una din cinci: baza 2, codul Morse, cifrul lui Cezar, cifrul Pigpen, cifrul cu permutări. Pe bilețel scrie regula, în trei rânduri, cu un exemplu rezolvat.
 
 Apoi echipa **oprește un trecător** și îi **explică noțiunea** — atât cât să o poată folosi singur.
 
@@ -118,13 +118,37 @@ La final, echipa caută **poziția N în Lista celor 30** și găsește acolo **
 
 Echipa trage din primul teanc; organizatorul scoate din al doilea cardul care se potrivește. **Toate mesajele se descifrează în același N.** Mai jos, totul calculat pentru **N = 17**.
 
+Trei carduri lucrează pe cifre și dau direct `17`. Două lucrează pe litere și dau numărul scris în cuvinte, `SAPTESPREZECE` — **alfabetul de 26 de litere, fără diacritice**, fiindcă grila Pigpen nu are căsuță pentru Ș.
+
 | Noțiunea | Ce scrie pe bilețelul echipei | Cardul criptat |
 |---|---|---|
 | **Baza 2** | Fiecare poziție valorează dublul celei din dreapta: … 16, 8, 4, 2, 1. Aduni valorile pozițiilor unde e 1. *Exemplu: 1010 = 8 + 2 = 10.* | `10001` |
 | **Codul Morse** | Fiecare cifră are exact cinci semne, iar grupurile sunt despărțite prin spațiu. 1 = `.----`, 2 = `..---`, 3 = `...--`, 4 = `....-`, 5 = `.....`, 6 = `-....`, 7 = `--...`, 8 = `---..`, 9 = `----.`, 0 = `-----` | `.---- --...` |
-| **Cifre romane** | I = 1, V = 5, X = 10, L = 50. Se adună de la stânga la dreapta; dacă un simbol mic stă înaintea unuia mai mare, se scade. *Exemplu: XIV = 10 + (5 − 1) = 14.* | `XVII` |
 | **Cifrul lui Cezar, pe cifre** | Fiecare cifră a fost mutată cu **5 înainte** pe cercul 0–9. Ca s-o descifrezi, mergi 5 înapoi; dacă treci de 0, continui de la 9. *Exemplu: 38 se descifrează 83.* | `62` |
-| **Poziția literei în alfabet** | A = 1, B = 2, C = 3 … Z = 26, **alfabetul de 26 de litere, fără diacritice**. Fiecare literă devine numărul ei. *Exemplu: CB = 32.* | `AG` |
+| **Cifrul Pigpen** | Alfabetul stă în două grile de X-și-0 și două X-uri (grila e tipărită pe bilețel). Fiecare literă se scrie cu **conturul căsuței în care stă** — doar liniile care o ating. Literele din a doua grilă și din al doilea X poartă și un **punct**. | cele 13 simboluri ale cuvântului `SAPTESPREZECE`, desenate (vezi mai jos) |
+| **Cifrul cu permutări (transpoziție)** | Literele sunt toate acolo, doar ordinea s-a schimbat: se împart în **grupuri de câte 3** și fiecare grup se scrie de-a-ndoaselea. Ultimul grup, chiar dacă e mai scurt, la fel. Aceeași regulă și criptează, și descifrează. *Exemplu: CARTE → CAR·TE → RAC·ET → RACET; iar RACET, trecut încă o dată prin regulă, se face la loc CARTE.* | `PASSETERPCEZE` |
+
+##### Grila Pigpen
+
+Se tipărește pe bilețelul echipei, mărită cât să încapă pe jumătate de A5:
+
+```
+   A │ B │ C        J·│ K·│ L·          \ S /        \ W·/
+  ───┼───┼───      ───┼───┼───           \ /          \ /
+   D │ E │ F        M·│ N·│ O·        T   ×   U    X·  ×  ·Y
+  ───┼───┼───      ───┼───┼───           / \          / \
+   G │ H │ I        P·│ Q·│ R·          / V \        /·Z \
+```
+
+Litera dispare, rămâne numai chenarul din jurul ei: **A** = colț deschis în sus și la stânga, **E** = pătrat închis, **N** = pătrat cu punct, **S** = unghi deschis în sus, **T** = unghi deschis la stânga.
+
+Cuvântul de pe card, literă cu literă: **S · A · P · T · E · S · P · R · E · Z · E · C · E**.
+
+Două lucruri la tipar. **Punctele se fac groase** — un punct pierdut face din P un G, și trecătorul se oprește la a treia literă. Iar simbolurile se desenează **la distanță egală unul de altul**, ca spațierea să nu trădeze unde se termină cuvintele — aici oricum e un singur cuvânt.
+
+Substituția se autocorectează: pe la a șaptea literă, `S A P T E S P …` se ghicește, deci un simbol desenat prost nu blochează proba. Cardul cu permutări nu are plasa asta — de aceea se scrie **lipit, fără grupuri vizibile** (`PASSETERPCEZE`, nu `PAS SET ERP CEZ E`). Dacă grupurile de trei se văd pe hârtie, regula e pe jumătate predată de card, nu de copii.
+
+> `[Cele două noțiuni pe litere cer de la trecător vreo două minute de scris, față de zece secunde la baza 2 — iar postul se trage la sorți, nu se alege. Dacă la briefing ți se pare nedrept, nu scurta cardurile: schimbă N într-unul cu nume scurt (**20** → `DOUAZECI`, opt litere; baza 2 `10100`, Cezar `75`, Morse `..--- -----`) și mută statuia pe poziția 20 în Lista celor 30. Nu cobora sub două cifre — la o singură cifră, cardurile pe cifre se descifrează dintr-o privire.]`
 
 Pe cardul criptat, deasupra textului, se tipărește mesajul pentru trecător:
 
@@ -135,7 +159,8 @@ Pe cardul criptat, deasupra textului, se tipărește mesajul pentru trecător:
 **De pregătit:**
 
 - `[Cinci noțiuni, cinci posturi, două echipe per post: fiecare post primește 2 bilețele cu noțiunea lui + 2 carduri criptate + 1 rezervă din fiecare. Se repetă noțiuni între echipe — nu e o problemă, cele două echipe de la același post sunt la 10 minute distanță. Cardurile criptate se țin la organizator, într-un plic, niciodată pe masă cu fața în sus.]`
-- `[Dacă schimbi N, refaci toate cele cinci carduri. Verifică fiecare de două ori — un card greșit trimite echipa în alt oraș.]`
+- `[Cardul Pigpen e singurul care nu se scrie de la tastatură: fie un font Pigpen gratuit, fie desenat cu marker negru gros și fotocopiat. Se face un singur original bun și se multiplică — trei exemplare desenate de mână înseamnă trei carduri ușor diferite. Bilețelul echipei are grila completă, cardul are numai simbolurile.]`
+- `[Dacă schimbi N, refaci toate cele cinci carduri. Verifică fiecare de două ori — un card greșit trimite echipa în alt oraș. Cel mai simplu control: dă-i cardul unui adult din tabără care n-a văzut soluția, cu bilețelul alături, și uită-te la ceas. Dacă nu iese în trei minute, iese și mai greu în stradă.]`
 - **Lista celor 30** se construiește tot atunci: 30 de locuri reale din Câmpulung, numerotate, cu **Statuia lui Negru Vodă pe poziția 17**. Se tipărește în **10 exemplare + 3 rezerve**, unul de echipă.
 
 Două lucruri de avut în vedere la listă:
