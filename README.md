@@ -87,14 +87,14 @@ Grupul de 13 merge mai încet decât unul de 8 — se întinde pe trotuar, se st
 
 ## 2. Traseul
 
-| # | Locația | Adresă | Proba | Indiciul către următoarea | Max | Până la următoarea |
+| # | Locația | Adresă | Proba | Indiciul către următoarea | Max | Oameni |
 |---|---|---|---|---|---|---|
-| **START** | **Primăria Câmpulung** | Str. Negru Vodă nr. 127 | Profesorul de pe stradă | Mesaj criptat + Lista celor 30 | 10 min | ~350 m |
-| 1 | **Statuia lui Negru Vodă** | în fața Casei de Cultură „Tudor Mușatescu”, Str. Republicii nr. 61 | Mima cu necunoscutul | Puzzle foto | 5 min | ~370 m |
-| 2 | **Grădina Publică „Merci”** | pe latura de vest a Bulevardului | Sosia de după gard | QR nelistat | 7 min | ~600 m |
-| 3 | **Piața Centrală Agroalimentară** | Piața Jurământului nr. 1 | Din ac în tractor | Mesaj audio | 9 min | ~550 m |
-| 4 | **Colegiul Național „Dinicu Golescu”** | Str. Negru Vodă nr. 66 | Ștafeta absurdă | Plic sigilat + **hartă goală** | 9 min | ~1,1 km |
-| **FINISH** | **Restaurant Ciobănașu** | Str. Petre Zamfirescu nr. 27A | — | — | — | — |
+| **START** | **Primăria Câmpulung** | Str. Negru Vodă nr. 127 | Profesorul de pe stradă | Mesaj criptat + Lista celor 30 | 10 min | eu + nicoleta |
+| 1 | **Statuia lui Negru Vodă** | în fața Casei de Cultură „Tudor Mușatescu”, Str. Republicii nr. 61 | Mima cu necunoscutul | Puzzle foto | 5 min | Fratii Paunescu |
+| 2 | **Grădina Publică „Merci”** | pe latura de vest a Bulevardului | Sosia de după gard | QR nelistat | 7 min | Alexandra + Tomita |
+| 3 | **Piața Centrală Agroalimentară** | Piața Jurământului nr. 1 | Din ac în tractor | Mesaj audio | 9 min | elevii cls 12 |
+| 4 | **Colegiul Național „Dinicu Golescu”** | Str. Negru Vodă nr. 66 | Ștafeta absurdă | Plic sigilat + **hartă goală** | 9 min | Cora + Alexandru Duma |
+| **FINISH** | **Restaurant Ciobănașu** | Str. Petre Zamfirescu nr. 27A | — | — | — | Eu |
 
 *Distanțele sunt calculate din coordonate (linie dreaptă × 1,3 pentru mersul pe străzi). Se confirmă la tura de verificare — mai ales ultimele trei legături, singurele peste 500 m.*
 
